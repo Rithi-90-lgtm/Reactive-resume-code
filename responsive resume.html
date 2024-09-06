@@ -1,0 +1,205 @@
+<html>
+<head>
+    <title>Reactive Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: none;
+            margin-bottom: 40px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .pro {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rithika.R</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Objective">Objective</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certifications</a></li>
+   <li><a href="#Declartion">Declartion</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Objective" class="active">
+            <h2>Objective</h2>
+            <p>I seek challenging opportunities where I can fully use my skills for the success of the organization.</p>
+        </section>
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="pro">
+                <h4 style="color: #604caf">LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/rithika-r-732611261">https://www.linkedin.com/in/rithika-r-732611261</a>
+            </div>
+   <div class="pro">
+                <h4 style="color: #604caf">CodeChef</h4>
+                <a href="https://www.codechef.com/users/kit26csbs43">https://www.codechef.com/users/kit26csbs43</a>
+            </div>
+   <div class="pro">
+                <h4 style="color: #604caf">StopStalk</h4>
+                <a href="https://www.stopstalk.com/user/profile/Rithi">https://www.stopstalk.com/user/profile/Rithi</a>
+
+            </div>
+   <div class="pro">
+                <h4 style="color: #604caf">Github</h4>
+                <a href="https://github.com/Rithi-90">https://github.com/Rithi-90</a>
+            </div>
+   <div class="pro">
+                
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1" width=100% height=50%>
+<tr>
+<th>Course/Degree</th>
+<th>School/University</th>
+<th>Grade/Score</th>
+<th>Year</th>
+</tr>
+<tr>
+<td align="center">B.Tech-Computer Science and Business Systems</td>
+<td align="center">KIT-Kalaignar Karunanidhi Institute of Technology</td>
+<td align="center">8.88CGPA</td>
+<td align="center">2022-2026</td>
+</tr>
+<tr>
+<td align="center">HSE +2</td>
+<td align="center">JB Matriculation Higher Secondary School</td>
+<td align="center">89%</td>
+<td align="center">2021-2022</td>
+</tr>
+<tr>
+<td align="center">SSLC</td>
+<td align="center">JB Matriculation Higher Secondary School</td>
+<td align="center">99.8%</td>
+<td align="center">2019-2020</td>
+</tr>
+</table>
+
+
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+   <h4 style="color:#604caf">Languages</h4>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>HTML,CSS</li>
+                <li>SQL</li>
+       <li>DBMS</li>
+            </ul>
+        </section>
+        <section id="certificates">
+   <h2>Certifications</h2>
+            <p>Python Foundation Certificate-Infosys springboard</p>
+<p>Knowledge Studio Basics Certification-Altair</p>
+<p>Problem Solving through Programming in C-NPTEL</p>
+<p>TechA Salesforce Certification-Infosys Springboard</p>
+<p>Agile Scrum Certification-Infosys Springboard</p>
+<p>TechA Web Development using HTML and CSS Foundation Certification-Infosys Springboard</p>
+<p>TechA Responsive Web Designing (HTML,CSS & Java Script) Foundation Certification-Infosys Springboard</p>
+   <h4 style="color: #4CAF50">Inplant Training</h4>
+<p>I completed the overview concepts of Web Application Development from February 6,2024 to February 16,2024 at
+BrainerySpot Technology</p>
+   <h4 style="color: #4CAF50">Co-Curricular Activities</h4>
+<p>I have attended workshop on WEB APPLICATION DEVELOPMENT in BrainerySpot Technology from 6 February,2024 to 18
+February,2024</p>
+        </section>
+<section id="Declartion">
+   <h2>Declartion</h2>
+<p>I declare that all the information provided above is genuine, complete, and accurate to the best of my understanding and
+belief.</p>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav ul li a");
+            const sections = document.querySelectorAll("main section");
+
+            for (let link of links) {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    const sectionId = event.target.getAttribute("href").substring(1);
+                    const section = document.getElementById(sectionId);
+
+                    sections.forEach(sec => sec.classList.remove("active"));
+                    section.classList.add("active");
+
+                    window.scrollTo({
+                        top: section.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
